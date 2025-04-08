@@ -1,0 +1,222 @@
+/* Algemene styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+}
+
+/* Hero-sectie */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #1f6feb, #0d1117);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero .highlight {
+  color: #58a6ff;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #58a6ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1f6feb;
+}
+
+/* Navigatie */
+nav {
+  background: #161b22;
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #c9d1d9;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #58a6ff;
+}
+
+#lang-switch {
+  background: #58a6ff;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#lang-switch:hover {
+  background: #1f6feb;
+}
+
+/* Main content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #58a6ff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #58a6ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Over mij */
+.over-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profielfoto {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 3px solid #58a6ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Projecten */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  background: #161b22;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project h3 {
+  color: #58a6ff;
+  margin-bottom: 10px;
+}
+
+/* Vaardigheden */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list li {
+  background: #161b22;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+/* Contact */
+#contact a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #161b22;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+}
+
+/* Responsiviteit */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 15px 0;
+  }
+
+  .over-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profielfoto {
+    margin: 20px auto;
+  }
+}
