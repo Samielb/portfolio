@@ -6,6 +6,7 @@
     --gray-light: #f3f4f6;
     --transition: all 0.3s ease;
 }
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -95,6 +96,26 @@ nav a:hover {
 
 #lang-switch:hover {
     background: var(--accent-color);
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    z-index: 1100;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+    transition: var(--transition);
 }
 
 /* Hero Section */
@@ -322,6 +343,50 @@ footer {
 
     .project-image {
         height: 180px;
+    }
+
+    /* Show hamburger menu on mobile */
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.active {
+        max-height: 500px;
+        padding: 1rem 0;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .menu-toggle.open span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;
+    }
+
+    .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.open span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -5px;
     }
 }
 
