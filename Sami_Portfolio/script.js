@@ -24,16 +24,6 @@ langSwitch.addEventListener('click', () => {
     updateLanguage();
 });
 
-// Hamburger menu functionality
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-// Toggle the navbar visibility when the hamburger menu is clicked
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-    hamburger.classList.toggle('open'); // Optional: toggle class for hamburger animation
-});
-
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
