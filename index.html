@@ -1,93 +1,164 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sami EL Baghdadi - Portfolio</title>
-  <link rel="stylesheet" href=./Sami_Portfolio\style.css />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami El Baghdadi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <h1 data-nl="Welkom! Ik ben" data-en="Welcome! I am">Welkom! Ik ben <br> <span class="highlight">Sami el Baghdadi</span></h1>
-    <p data-nl="Aankomend softwareontwikkelaar met passie voor technologie en design." data-en="Aspiring software developer with a passion for technology and design.">Aankomend softwareontwikkelaar met passie voor technologie en design.</p>
-    <a href="#over" class="btn" data-nl="Meer over mij" data-en="More about me">Meer over mij</a>
-  </header>
+    <nav>
+        <ul>
+            <li><a href="#home" data-nl="Home" data-en="Home">Home</a></li>
+            <li><a href="#over" data-nl="Over Mij" data-en="About Me">Over Mij</a></li>
+            <li><a href="#projecten" data-nl="Projecten" data-en="Projects">Projecten</a></li>
+            <li><a href="#contact" data-nl="Contact" data-en="Contact">Contact</a></li>
+            <li><button id="lang-switch" data-lang="en">EN</button></li>
+        </ul>
+    </nav>
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 data-nl="Welkom! Ik ben" data-en="Welcome! I am">Welkom! Ik ben <br><span class="highlight">Sami EL Baghdadi </span></h1>
+            <p data-nl="Aankomend softwareontwikkelaar met passie voor technologie en design." data-en="Aspiring software developer with a passion for technology and design.">
+                Aankomend softwareontwikkelaar met passie voor technologie en design.
+            </p>
+            <a href="#over" class="btn" data-nl="Meer over mij" data-en="More about me">Meer over mij</a>
+        </div>
+    </section>
+    
 
-  <nav>
-    <ul>
-      <li><a href="#over" data-nl="Over Mij" data-en="About Me">Over Mij</a></li>
-      <li><a href="#projecten" data-nl="Projecten" data-en="Projects">Projecten</a></li>
-      <li><a href="#skills" data-nl="Vaardigheden" data-en="Skills">Vaardigheden</a></li>
-      <li><a href="#contact" data-nl="Contact" data-en="Contact">Contact</a></li>
-      <li><button id="lang-switch" data-lang="en">EN</button></li>
-    </ul>
-  </nav>
-
-  <main>
     <section id="over">
-      <h2 data-nl="Over Mij" data-en="About Me">Over Mij</h2>
-      <div class="over-container">
-        <img src="./Sami_Portfolio/sami.png" alt="Foto van Sami el Baghdadi" class="profielfoto" />
-        <p data-nl="Ik ben een 20-jarige student Software Development aan ROC Zuidoost, niveau 4. Met een passie voor programmeren werk ik graag aan websites, databases en systemen die écht werken." 
-           data-en="I am a 20-year-old Software Development student at ROC Zuidoost, level 4. With a passion for programming, I enjoy working on websites, databases, and systems that really work.">Ik ben een 20-jarige student Software Development aan ROC Zuidoost, niveau 4. Met een passie voor programmeren werk ik graag aan websites, databases en systemen die écht werken.</p>
-      </div>
+        <div class="container">
+            <h2 data-nl="Over Mij" data-en="About Me">Over Mij</h2>
+            <div class="about-content">
+                <img src="sami.jpg" alt="Sami el Baghdadi" class="profile-img">
+                <div class="about-text">
+                    <p data-nl="Ik ben een 20-jarige student Software Development aan ROC Zuidoost, niveau 4. Met een passie voor programmeren werk ik graag aan websites, databases en systemen die écht werken." 
+                       data-en="I am a 20-year-old Software Development student at ROC Zuidoost, level 4. With a passion for programming, I enjoy working on websites, databases, and systems that really work.">
+                        Ik ben een 20-jarige student Software Development aan ROC Zuidoost, niveau 4. Met een passie voor programmeren werk ik graag aan websites, databases en systemen die écht werken.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projecten">
-      <h2 data-nl="Projecten" data-en="Projects">Projecten</h2>
-      <div class="project-grid">
-        <div class="project">
-          <h3 data-nl="Bright Smile - Tandartswebsite" data-en="Bright Smile - Dentist Website">Bright Smile - Tandartswebsite</h3>
-          <p data-nl="PHP + MySQL website voor het beheren van afspraken met een nette gebruikersinterface." 
-             data-en="PHP + MySQL website for managing appointments with a clean user interface.">PHP + MySQL website voor het beheren van afspraken met een nette gebruikersinterface.</p>
+        <div class="container">
+            <h2 data-nl="Projecten" data-en="Projects">Projecten</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg" alt="Bright Smile Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-nl="Bright Smile - Tandartswebsite" data-en="Bright Smile - Dentist Website">Bright Smile - Tandartswebsite</h3>
+                        <p data-nl="PHP + MySQL website voor het beheren van afspraken met een nette gebruikersinterface." 
+                           data-en="PHP + MySQL website for managing appointments with a clean user interface.">
+                            PHP + MySQL website voor het beheren van afspraken met een nette gebruikersinterface.
+                        </p>
+                        <div class="project-details">
+                            <div class="tech-stack">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-nl="Live Demo" data-en="Live Demo">Live Demo</a>
+                                <a href="#" class="project-link" data-nl="Code" data-en="Code">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg" alt="NextGen GameSystem Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-nl="NextGen GameSystem" data-en="NextGen GameSystem">NextGen GameSystem</h3>
+                        <p data-nl="Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier." 
+                           data-en="Modern webshop for gaming hardware and repairs, with registration and contact forms.">
+                            Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier.
+                        </p>
+                        <div class="project-details">
+                            <div class="tech-stack">
+                                <span>HTML/CSS</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-nl="Live Demo" data-en="Live Demo">Live Demo</a>
+                                <a href="#" class="project-link" data-nl="Code" data-en="Code">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg" alt="NextGen GameSystem Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-nl="NextGen GameSystem" data-en="NextGen GameSystem">NextGen GameSystem</h3>
+                        <p data-nl="Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier." 
+                           data-en="Modern webshop for gaming hardware and repairs, with registration and contact forms.">
+                            Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier.
+                        </p>
+                        <div class="project-details">
+                            <div class="tech-stack">
+                                <span>HTML/CSS</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-nl="Live Demo" data-en="Live Demo">Live Demo</a>
+                                <a href="#" class="project-link" data-nl="Code" data-en="Code">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg" alt="NextGen GameSystem Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-nl="NextGen GameSystem" data-en="NextGen GameSystem">NextGen GameSystem</h3>
+                        <p data-nl="Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier." 
+                           data-en="Modern webshop for gaming hardware and repairs, with registration and contact forms.">
+                            Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier.
+                        </p>
+                        <div class="project-details">
+                            <div class="tech-stack">
+                                <span>HTML/CSS</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-nl="Live Demo" data-en="Live Demo">Live Demo</a>
+                                <a href="#" class="project-link" data-nl="Code" data-en="Code">Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project">
-          <h3 data-nl="NextGen GameSystem" data-en="NextGen GameSystem">NextGen GameSystem</h3>
-          <p data-nl="Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier." 
-             data-en="Modern webshop for gaming hardware and repairs, with registration and contact forms.">Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills">
-      <h2 data-nl="Vaardigheden" data-en="Skills">Vaardigheden</h2>
-      <ul class="skills-list">
-        <li data-nl="HTML, CSS, JavaScript" data-en="HTML, CSS, JavaScript">HTML, CSS, JavaScript</li>
-        <li data-nl="PHP, MySQL" data-en="PHP, MySQL">PHP, MySQL</li>
-        <li data-nl="Responsieve webdesign & databasebeheer" data-en="Responsive web design & database management">Responsieve webdesign & databasebeheer</li>
-      </ul>
     </section>
 
     <section id="contact">
-      <h2 data-nl="Contact" data-en="Contact">Contact</h2>
-      <p>Email: <a href="mailto:samibaghdadi15@hotmail.com">samibaghdadi15@hotmail.com</a></p>
-      <p data-nl="Telefoon:" data-en="Phone:">Telefoon: <a href="tel:+31640818195">06-40818195</a></p>
+        <div class="container">
+            <h2 data-nl="Contact" data-en="Contact">Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:samibaghdadi15@hotmail.com">samibaghdadi15@hotmail.com</a></p>
+                <p data-nl="Telefoon:" data-en="Phone:">Telefoon: <a href="tel:+31640818195">06-40818195</a></p>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p data-nl="© 2025 Sami el Baghdadi." data-en="© 2025 Sami el Baghdadi.">© 2025 Sami el Baghdadi.</p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy;  Sami el Baghdadi </p>
+        </div>
+    </footer>
 
-  <script>
-    const langSwitch = document.getElementById('lang-switch');
-    let currentLang = 'nl'; // Standaard Nederlands
-
-    langSwitch.addEventListener('click', () => {
-      currentLang = currentLang === 'nl' ? 'en' : 'nl';
-      langSwitch.textContent = currentLang === 'nl' ? 'EN' : 'NL';
-      langSwitch.setAttribute('data-lang', currentLang === 'nl' ? 'en' : 'nl');
-
-      // Algemene tekstvervanging
-      document.querySelectorAll('[data-nl][data-en]').forEach(element => {
-        element.textContent = element.getAttribute(`data-${currentLang}`);
-      });
-
-      // Speciaal geval voor de header h1 om de span te behouden
-      const heroTitle = document.querySelector('.hero h1');
-      heroTitle.innerHTML = `${heroTitle.getAttribute(`data-${currentLang}`)} <br> <span class="highlight">Sami el Baghdadi</span>`;
-    });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
