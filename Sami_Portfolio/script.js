@@ -31,6 +31,7 @@ const navLinks = document.getElementById('nav-links');
 // Toggle the navbar visibility when the hamburger menu is clicked
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
+    hamburger.classList.toggle('open'); // Optional: toggle class for hamburger animation
 });
 
 // Smooth scrolling
