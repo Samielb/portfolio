@@ -33,3 +33,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('show');	
+});
+document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('nav ul').classList.remove('show');
+    });
+}); 
