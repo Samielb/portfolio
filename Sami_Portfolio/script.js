@@ -5,7 +5,7 @@ let currentLang = 'nl';
 function updateLanguage() {
     document.querySelectorAll('[data-nl][data-en]').forEach(element => {
         const newText = element.getAttribute(`data-${currentLang}`);
-        
+
         // Special handling for the hero title to preserve the name highlight
         if (element.classList.contains('hero') && element.tagName === 'H1') {
             element.innerHTML = `${newText} <br><span class="highlight">Sami el Baghdadi</span>`;
@@ -22,6 +22,9 @@ function updateLanguage() {
 langSwitch.addEventListener('click', () => {
     currentLang = currentLang === 'nl' ? 'en' : 'nl';
     updateLanguage();
+
+    // Sluit het menu als het open is
+    document.querySelector('nav ul').classList.remove('show');
 });
 
 // Smooth scrolling
@@ -33,11 +36,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Hamburger toggle
 document.querySelector('.hamburger').addEventListener('click', () => {
     document.querySelector('nav ul').classList.toggle('show');	
 });
+
+// Menu sluiten bij klik op link
 document.querySelectorAll("nav ul li a").forEach(link => {
     link.addEventListener('click', () => {
         document.querySelector('nav ul').classList.remove('show');
     });
-}); 
+});
+
