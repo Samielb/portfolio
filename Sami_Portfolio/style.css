@@ -323,6 +323,10 @@ footer {
     background: var(--primary-color);
  
 }
+.contact-title {
+    color: var(--primary-color);
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .hero h1 {
