@@ -40,6 +40,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Hamburger toggle
 document.querySelector('.hamburger').addEventListener('click', () => {
     document.querySelector('nav ul').classList.toggle('show');	
+    document.querySelector('.hamburger').classList.toggle('show');	
 });
 
 // Menu sluiten bij klik op link
@@ -48,4 +49,5 @@ document.querySelectorAll("nav ul li a").forEach(link => {
         document.querySelector('nav ul').classList.remove('show');
     });
 });
+
 
