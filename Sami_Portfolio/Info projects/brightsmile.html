@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bright Smile Project - Sami El Baghdadi</title>
     <link rel="stylesheet" href="../project.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <h1 class="mobile-title">Sami EL Baghdadi</h1>
         <ul>
-            <li><a href="https://samielb.github.io/portfolio/index.html" data-nl="Terug" data-en="Back">Terug</a></li>
+            <li><a href="../../index.html" data-nl="← Terug naar Home" data-en="← Back to Home">← Terug naar Home</a></li>
             <li><button id="lang-switch" data-lang="en">EN</button></li>
         </ul>
         <button class="hamburger">
@@ -21,59 +21,298 @@
         </button>
     </nav>
 
-
-    <div class="container project-page">
-        <div class="project-header">
-            <h1 data-nl="Bright Smile - Tandartswebsite" data-en="Bright Smile - Dentist Website">Bright Smile - Tandartswebsite</h1>
-            <img src="../foto's/bright smile/welkom.png" alt="Bright Smile Project">
-        </div>
-
-        <div class="project-content">
-            <section class="project-description">
-                <h2 data-nl="Projectbeschrijving" data-en="Project Description">Projectbeschrijving</h2>
-                <p data-nl="Een moderne en gebruiksvriendelijke website voor een tandartspraktijk. De website maakt het mogelijk voor patiënten om online afspraken te maken en hun tandheelkundige geschiedenis te bekijken." 
-                   data-en="A modern and user-friendly website for a dental practice. The website allows patients to make appointments online and view their dental history.">
-                    Een moderne en gebruiksvriendelijke website voor een tandartspraktijk. De website maakt het mogelijk voor patiënten om online afspraken te maken en hun tandheelkundige geschiedenis te bekijken.
+    <!-- Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-badge" data-nl="Schoolproject 2023" data-en="School Project 2023">Schoolproject 2023</div>
+                <h1 data-nl="Bright Smile - Tandartswebsite" data-en="Bright Smile - Dentist Website">Bright Smile - Tandartswebsite</h1>
+                <p class="project-subtitle" data-nl="Een complete webapplicatie voor een tandartspraktijk met afsprakenbeheer en patiëntenportaal" 
+                   data-en="A complete web application for a dental practice with appointment management and patient portal">
+                    Een complete webapplicatie voor een tandartspraktijk met afsprakenbeheer en patiëntenportaal
                 </p>
-            </section>
-
-            <section class="project-features">
-                <h2 data-nl="Kenmerken" data-en="Features">Kenmerken</h2>
-                <ul>
-                    <li data-nl="Online afsprakensysteem" data-en="Online appointment system">Online afsprakensysteem</li>
-                    <li data-nl="Patiëntenportaal" data-en="Patient portal">Patiëntenportaal</li>
-                    <li data-nl="Responsive design" data-en="Responsive design">Responsive design</li>
-                    <li data-nl="Beveiligde database" data-en="Secure database">Beveiligde database</li>
-                </ul>
-            </section>
-
-            <section class="project-tech">
-                <h2 data-nl="Technologieën" data-en="Technologies">Technologieën</h2>
-                <div class="tech-stack">
+                <div class="tech-stack-hero">
                     <span>PHP</span>
                     <span>MySQL</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
+                    <span>HTML/CSS</span>
                     <span>JavaScript</span>
                 </div>
-            </section>
+            </div>
+            <div class="project-hero-image">
+                <img src="../foto's/bright smile/welkom.png" alt="Bright Smile Project">
+            </div>
+        </div>
+    </section>
 
-            <section class="project-gallery">
-                <h2 data-nl="Galerij" data-en="Gallery">Galerij</h2>
-                <div class="gallery-grid">
-                    <img src="../foto's/bright smile/welkom.png" alt="Bright Smile Interface">
-                    <img src="../foto's/bright smile/behandelingen.png" alt="Appointment System">
-                    <img src="../foto's/bright smile/contact.png" alt="Patient Portal">
+    <div class="container project-page">
+        <!-- Project Overview -->
+        <section class="project-overview">
+            <div class="overview-grid">
+                <div class="overview-item">
+                    <div class="overview-icon">🎯</div>
+                    <h3 data-nl="Doel" data-en="Goal">Doel</h3>
+                    <p data-nl="Efficiënt afsprakenbeheer voor tandartspraktijk" data-en="Efficient appointment management for dental practice">
+                        Efficiënt afsprakenbeheer voor tandartspraktijk
+                    </p>
                 </div>
-            </section>
+                <div class="overview-item">
+                    <div class="overview-icon">⏱️</div>
+                    <h3 data-nl="Duur" data-en="Duration">Duur</h3>
+                    <p>8 weken</p>
+                </div>
+                <div class="overview-item">
+                    <div class="overview-icon">👥</div>
+                    <h3 data-nl="Rol" data-en="Role">Rol</h3>
+                    <p data-nl="Full-stack Developer" data-en="Full-stack Developer">Full-stack Developer</p>
+                </div>
+                <div class="overview-item">
+                    <div class="overview-icon">📱</div>
+                    <h3 data-nl="Platform" data-en="Platform">Platform</h3>
+                    <p>Web (Responsive)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Description -->
+        <section class="project-section">
+            <h2 data-nl="📋 Projectbeschrijving" data-en="📋 Project Description">📋 Projectbeschrijving</h2>
+            <div class="content-card">
+                <p data-nl="Bright Smile is een moderne webapplicatie ontwikkeld voor een tandartspraktijk om het afsprakenproces te digitaliseren en te stroomlijnen. Het systeem stelt patiënten in staat om eenvoudig online afspraken te maken, hun behandelgeschiedenis in te zien en te communiceren met de praktijk." 
+                   data-en="Bright Smile is a modern web application developed for a dental practice to digitize and streamline the appointment process. The system enables patients to easily make appointments online, view their treatment history and communicate with the practice.">
+                    Bright Smile is een moderne webapplicatie ontwikkeld voor een tandartspraktijk om het afsprakenproces te digitaliseren en te stroomlijnen. Het systeem stelt patiënten in staat om eenvoudig online afspraken te maken, hun behandelgeschiedenis in te zien en te communiceren met de praktijk.
+                </p>
+                <p data-nl="De website bevat zowel een gebruikersvriendelijk front-end voor patiënten als een krachtig administratiepaneel voor tandartsen en assistenten. Alle data wordt veilig opgeslagen in een MySQL database met encryptie voor gevoelige informatie." 
+                   data-en="The website features both a user-friendly front-end for patients and a powerful admin panel for dentists and assistants. All data is securely stored in a MySQL database with encryption for sensitive information.">
+                    De website bevat zowel een gebruikersvriendelijk front-end voor patiënten als een krachtig administratiepaneel voor tandartsen en assistenten. Alle data wordt veilig opgeslagen in een MySQL database met encryptie voor gevoelige informatie.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="project-section">
+            <h2 data-nl="✨ Belangrijkste Functionaliteiten" data-en="✨ Key Features">✨ Belangrijkste Functionaliteiten</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3 data-nl="Online Afspraken" data-en="Online Appointments">Online Afspraken</h3>
+                    <p data-nl="Patiënten kunnen 24/7 afspraken inplannen via een intuïtieve kalenderinterface met real-time beschikbaarheid." 
+                       data-en="Patients can schedule appointments 24/7 via an intuitive calendar interface with real-time availability.">
+                        Patiënten kunnen 24/7 afspraken inplannen via een intuïtieve kalenderinterface met real-time beschikbaarheid.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3 data-nl="Patiëntenportaal" data-en="Patient Portal">Patiëntenportaal</h3>
+                    <p data-nl="Persoonlijk dashboard waar patiënten hun medische geschiedenis, komende afspraken en facturatiegegevens kunnen bekijken." 
+                       data-en="Personal dashboard where patients can view their medical history, upcoming appointments and billing information.">
+                        Persoonlijk dashboard waar patiënten hun medische geschiedenis, komende afspraken en facturatiegegevens kunnen bekijken.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3 data-nl="Notificaties" data-en="Notifications">Notificaties</h3>
+                    <p data-nl="Automatische email herinneringen voor aankomende afspraken en bevestigingen na het boeken." 
+                       data-en="Automatic email reminders for upcoming appointments and confirmations after booking.">
+                        Automatische email herinneringen voor aankomende afspraken en bevestigingen na het boeken.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 data-nl="Beveiliging" data-en="Security">Beveiliging</h3>
+                    <p data-nl="Veilige authenticatie, geëncrypteerde database en compliance met privacy wetgeving voor medische data." 
+                       data-en="Secure authentication, encrypted database and compliance with privacy legislation for medical data.">
+                        Veilige authenticatie, geëncrypteerde database en compliance met privacy wetgeving voor medische data.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 data-nl="Admin Panel" data-en="Admin Panel">Admin Panel</h3>
+                    <p data-nl="Complete administratie interface voor het beheren van afspraken, patiënten en behandelingen door het personeel." 
+                       data-en="Complete administration interface for managing appointments, patients and treatments by staff.">
+                        Complete administratie interface voor het beheren van afspraken, patiënten en behandelingen door het personeel.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-nl="Rapportages" data-en="Reports">Rapportages</h3>
+                    <p data-nl="Gedetailleerde statistieken en rapporten over afspraken, no-shows en patiënttevredenheid." 
+                       data-en="Detailed statistics and reports on appointments, no-shows and patient satisfaction.">
+                        Gedetailleerde statistieken en rapporten over afspraken, no-shows en patiënttevredenheid.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Details -->
+        <section class="project-section">
+            <h2 data-nl="🛠️ Technische Details" data-en="🛠️ Technical Details">🛠️ Technische Details</h2>
+            <div class="tech-details-grid">
+                <div class="tech-detail-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li><strong>HTML5 & CSS3</strong> - Semantische markup en moderne styling</li>
+                        <li><strong>JavaScript (ES6+)</strong> - Interactieve gebruikersinterface</li>
+                        <li><strong>Responsive Design</strong> - Mobiel-first aanpak</li>
+                        <li><strong>AJAX</strong> - Asynchrone data updates</li>
+                    </ul>
+                </div>
+                <div class="tech-detail-card">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li><strong>PHP 7.4+</strong> - Server-side logica</li>
+                        <li><strong>PDO</strong> - Veilige database queries</li>
+                        <li><strong>Session Management</strong> - Gebruikersauthenticatie</li>
+                        <li><strong>Password Hashing</strong> - Bcrypt encryptie</li>
+                    </ul>
+                </div>
+                <div class="tech-detail-card">
+                    <h3>Database</h3>
+                    <ul>
+                        <li><strong>MySQL 8.0</strong> - Relationele database</li>
+                        <li><strong>Normalized Schema</strong> - Efficiënte data structuur</li>
+                        <li><strong>Indexes</strong> - Geoptimaliseerde queries</li>
+                        <li><strong>Foreign Keys</strong> - Data integriteit</li>
+                    </ul>
+                </div>
+                <div class="tech-detail-card">
+                    <h3 data-nl="Beveiliging" data-en="Security">Beveiliging</h3>
+                    <ul>
+                        <li><strong>SQL Injection Protection</strong> - Prepared statements</li>
+                        <li><strong>XSS Prevention</strong> - Input sanitization</li>
+                        <li><strong>CSRF Tokens</strong> - Form protection</li>
+                        <li><strong>HTTPS</strong> - Encrypted connections</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges & Solutions -->
+        <section class="project-section">
+            <h2 data-nl="💡 Uitdagingen & Oplossingen" data-en="💡 Challenges & Solutions">💡 Uitdagingen & Oplossingen</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <span class="challenge-label" data-nl="Uitdaging" data-en="Challenge">Uitdaging</span>
+                        <h3 data-nl="Dubbele Boekingen Voorkomen" data-en="Preventing Double Bookings">Dubbele Boekingen Voorkomen</h3>
+                    </div>
+                    <p data-nl="Het systeem moest real-time beschikbaarheid controleren om conflicterende afspraken te voorkomen." 
+                       data-en="The system had to check real-time availability to prevent conflicting appointments.">
+                        Het systeem moest real-time beschikbaarheid controleren om conflicterende afspraken te voorkomen.
+                    </p>
+                    <div class="solution">
+                        <span class="solution-label" data-nl="Oplossing" data-en="Solution">Oplossing</span>
+                        <p data-nl="Implementatie van database transactions en row-level locking om concurrency issues op te lossen." 
+                           data-en="Implementation of database transactions and row-level locking to solve concurrency issues.">
+                            Implementatie van database transactions en row-level locking om concurrency issues op te lossen.
+                        </p>
+                    </div>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-header">
+                        <span class="challenge-label" data-nl="Uitdaging" data-en="Challenge">Uitdaging</span>
+                        <h3 data-nl="Privacy van Medische Data" data-en="Privacy of Medical Data">Privacy van Medische Data</h3>
+                    </div>
+                    <p data-nl="Gevoelige patiëntgegevens moesten extra beveiligd worden volgens AVG wetgeving." 
+                       data-en="Sensitive patient data had to be extra secured according to GDPR legislation.">
+                        Gevoelige patiëntgegevens moesten extra beveiligd worden volgens AVG wetgeving.
+                    </p>
+                    <div class="solution">
+                        <span class="solution-label" data-nl="Oplossing" data-en="Solution">Oplossing</span>
+                        <p data-nl="Encryptie van gevoelige velden, role-based access control en uitgebreide audit logging." 
+                           data-en="Encryption of sensitive fields, role-based access control and extensive audit logging.">
+                            Encryptie van gevoelige velden, role-based access control en uitgebreide audit logging.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="project-section">
+            <h2 data-nl="🖼️ Project Galerij" data-en="🖼️ Project Gallery">🖼️ Project Galerij</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../foto's/bright smile/welkom.png" alt="Bright Smile Homepage">
+                    <p data-nl="Homepage met overzicht behandelingen" data-en="Homepage with treatment overview">Homepage met overzicht behandelingen</p>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../foto's/bright smile/behandelingen.png" alt="Behandelingen pagina">
+                    <p data-nl="Behandelingen overzicht" data-en="Treatments overview">Behandelingen overzicht</p>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="../foto's/bright smile/contact.png" alt="Contact pagina">
+                    <p data-nl="Contact en afspraken maken" data-en="Contact and appointments">Contact en afspraken maken</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Outcomes -->
+        <section class="project-section">
+            <h2 data-nl="📚 Wat Heb Ik Geleerd?" data-en="📚 What Did I Learn?">📚 Wat Heb Ik Geleerd?</h2>
+            <div class="content-card">
+                <div class="learning-list">
+                    <div class="learning-item">
+                        <div class="learning-icon">✅</div>
+                        <div>
+                            <h4 data-nl="Database Design" data-en="Database Design">Database Design</h4>
+                            <p data-nl="Ontwerpen van een genormaliseerde database structuur met complexe relaties tussen tabellen." 
+                               data-en="Designing a normalized database structure with complex relationships between tables.">
+                                Ontwerpen van een genormaliseerde database structuur met complexe relaties tussen tabellen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-icon">✅</div>
+                        <div>
+                            <h4 data-nl="Veiligheid" data-en="Security">Veiligheid</h4>
+                            <p data-nl="Implementeren van beveiligingsmaatregelen zoals SQL injection preventie, password hashing en input validatie." 
+                               data-en="Implementing security measures such as SQL injection prevention, password hashing and input validation.">
+                                Implementeren van beveiligingsmaatregelen zoals SQL injection preventie, password hashing en input validatie.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-icon">✅</div>
+                        <div>
+                            <h4>PHP & MySQL</h4>
+                            <p data-nl="Werken met PDO voor veilige database interacties en het bouwen van een MVC-achtige architectuur." 
+                               data-en="Working with PDO for secure database interactions and building an MVC-like architecture.">
+                                Werken met PDO voor veilige database interacties en het bouwen van een MVC-achtige architectuur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-icon">✅</div>
+                        <div>
+                            <h4 data-nl="User Experience" data-en="User Experience">User Experience</h4>
+                            <p data-nl="Het belang van een intuïtieve interface voor gebruikers met verschillende technische vaardigheden." 
+                               data-en="The importance of an intuitive interface for users with different technical skills.">
+                                Het belang van een intuïtieve interface voor gebruikers met verschillende technische vaardigheden.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back Button -->
+        <div class="back-to-home">
+            <a href="../../index.html" class="btn-back" data-nl="← Terug naar Portfolio" data-en="← Back to Portfolio">← Terug naar Portfolio</a>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Sami el Baghdadi</p>
+            <p>&copy; 2026 Sami el Baghdadi</p>
         </div>
     </footer>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
 
     <script src="../script.js"></script>
 </body>

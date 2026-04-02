@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sami El Baghdadi - Portfolio</title>
     <link rel="stylesheet" href="Sami_Portfolio/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,6 +15,8 @@
         <ul>
             <li><a href="#home" data-nl="Home" data-en="Home">Home</a></li>
             <li><a href="#projecten" data-nl="Projecten" data-en="Projects">Projecten</a></li>
+            <li><a href="#skills" data-nl="Vaardigheden" data-en="Skills">Vaardigheden</a></li>
+            <li><a href="#timeline" data-nl="Tijdlijn" data-en="Timeline">Tijdlijn</a></li>
             <li><a href="#over" data-nl="Over Mij" data-en="About Me">Over Mij</a></li>
             <li><a href="#contact" data-nl="Contact" data-en="Contact">Contact</a></li>
             <li><button id="lang-switch" data-lang="en">EN</button></li>
@@ -45,7 +49,7 @@
             <div class="projects-grid">
                 <div class="project">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg" alt="Bright Smile Project">
+                        <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bright Smile Project" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3 data-nl="Bright Smile - Tandartswebsite" data-en="Bright Smile - Dentist Website">Bright Smile - Tandartswebsite</h3>
@@ -66,7 +70,7 @@
                 </div>
                 <div class="project">
                     <div class="project-image">
-                        <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg" alt="NextGen GameSystem Project">
+                        <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NextGen GameSystem Project" loading="lazy">
                     </div>
                     <div class="project-content">
                         <h3 data-nl="NextGen GameSystem" data-en="NextGen GameSystem">NextGen GameSystem</h3>
@@ -89,18 +93,187 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 data-nl="Vaardigheden" data-en="Skills">Vaardigheden</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-nl="Frontend" data-en="Frontend">Frontend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="50"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Responsive Design</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-nl="Backend" data-en="Backend">Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>PHP</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MySQL</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-nl="Database Design" data-en="Database Design">Database Design</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="60"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-nl="Tools & Methoden" data-en="Tools & Methods">Tools & Methoden</h3>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Git/GitHub</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>VS Code</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span data-nl="Probleemoplossing" data-en="Problem Solving">Probleemoplossing</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="container">
+            <h2 data-nl="Opleiding & Ervaring" data-en="Education & Experience">Opleiding & Ervaring</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date" data-nl="2022 - Heden" data-en="2022 - Present">2022 - Heden</div>
+                        <h3 data-nl="Software Development - Niveau 4" data-en="Software Development - Level 4">Software Development - Niveau 4</h3>
+                        <h4 data-nl="ROC Zuidoost" data-en="ROC Zuidoost">ROC Zuidoost</h4>
+                        <p data-nl="Bezig met een MBO niveau 4 opleiding Software Development, waarbij ik leer over webontwikkeling, databases, programmeertalen en softwareprojecten." 
+                           data-en="Currently pursuing a level 4 MBO education in Software Development, learning about web development, databases, programming languages, and software projects.">
+                            Bezig met een MBO niveau 4 opleiding Software Development, waarbij ik leer over webontwikkeling, databases, programmeertalen en softwareprojecten.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3 data-nl="Bright Smile Project" data-en="Bright Smile Project">Bright Smile Project</h3>
+                        <h4 data-nl="Schoolproject" data-en="School Project">Schoolproject</h4>
+                        <p data-nl="Ontwikkeld een complete tandartswebsite met afsprakensysteem, gebruikend PHP en MySQL voor database-integratie." 
+                           data-en="Developed a complete dentist website with appointment system, using PHP and MySQL for database integration.">
+                            Ontwikkeld een complete tandartswebsite met afsprakensysteem, gebruikend PHP en MySQL voor database-integratie.
+                        </p>
+                        <a href="./Sami_Portfolio/Info projects/brightsmile.html" class="timeline-link" data-nl="Bekijk Project" data-en="View Project">Bekijk Project →</a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3 data-nl="NextGen GameSystem" data-en="NextGen GameSystem">NextGen GameSystem</h3>
+                        <h4 data-nl="Webshop Project" data-en="Webshop Project">Webshop Project</h4>
+                        <p data-nl="Gebouwd een moderne webshop voor gaming hardware met registratie- en contactformulieren, volledig responsive design." 
+                           data-en="Built a modern webshop for gaming hardware with registration and contact forms, fully responsive design.">
+                            Gebouwd een moderne webshop voor gaming hardware met registratie- en contactformulieren, volledig responsive design.
+                        </p>
+                        <a href="./Sami_Portfolio/Info projects/nextgen.html" class="timeline-link" data-nl="Bekijk Project" data-en="View Project">Bekijk Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Over Mij met Contact eronder -->
     <section id="over">
         <div class="container">
             
             <div class="about-content">
-                <img src="Sami_Portfolio/sami.jpg" alt="Sami el Baghdadi" class="profile-img">
+                <img src="Sami_Portfolio/sami.jpg" alt="Sami el Baghdadi" class="profile-img" loading="lazy">
                 <div class="about-text">
                     <h2 data-nl= "Over Mij" data-en="About Me">Over Mij</h2>
                     <p data-nl="Ik ben een 20-jarige student Software Development aan ROC Zuidoost, niveau 4. Met een passie voor programmeren werk ik graag aan websites, databases en systemen die écht werken." 
-                       data-en="I am a 20-year-old Software Development student at ROC Zuidoost, level 4. With a passion for programming, I enjoy working on websites, databases, and systems that really work.">
-                        Ik ben een 20-jarige student Software Development aan ROC Zuidoost, niveau 4. Met een passie voor programmeren werk ik graag aan websites, databases en systemen die écht werken.
+                       data-en="I am a 21 year-old Software Development student at ROC Zuidoost, level 4. With a passion for programming, I enjoy working on websites, databases, and systems that really work.">
+                        Ik ben een 21 jarige student Software Development aan ROC Zuidoost, niveau 4. Met een passie voor programmeren werk ik graag aan websites, databases en systemen die écht werken.
                     </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎯</div>
+                            <h4 data-nl="Focus" data-en="Focus">Focus</h4>
+                            <p data-nl="Webontwikkeling & Databases" data-en="Web Development & Databases">Webontwikkeling & Databases</p>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💡</div>
+                            <h4 data-nl="Passie" data-en="Passion">Passie</h4>
+                            <p data-nl="Clean Code & Design" data-en="Clean Code & Design">Clean Code & Design</p>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🚀</div>
+                            <h4 data-nl="Doel" data-en="Goal">Doel</h4>
+                            <p data-nl="Innovatieve Oplossingen" data-en="Innovative Solutions">Innovatieve Oplossingen</p>
+                        </div>
+                    </div>
+                    
                     <!-- Contact direct onder de tekst -->
                      
                     
