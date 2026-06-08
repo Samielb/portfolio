@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
     <nav>
@@ -42,61 +43,142 @@
         <div class="overlay"></div>
     </section>
 
-    <!-- Projecten sectie ongewijzigd -->
-    <section id="projecten">
-        <div class="container">
-            <h2 data-nl="Projecten" data-en="Projects">Projecten</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Bright Smile Project" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 data-nl="Bright Smile - Tandartswebsite" data-en="Bright Smile - Dentist Website">Bright Smile - Tandartswebsite</h3>
-                        <p data-nl="PHP + MySQL website voor het beheren van afspraken met een nette gebruikersinterface." data-en="PHP + MySQL website for managing appointments with a clean user interface.">
-                            PHP + MySQL website voor het beheren van afspraken met een nette gebruikersinterface.
-                        </p>
-                        <div class="project-details">
-                            <div class="tech-stack">
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                                <span>HTML/CSS</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="./Sami_Portfolio/Info projects/brightsmile.html" class="project-link" data-nl="Meer over dit project" data-en="more about this project">Meer over dit project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-image">
-                        <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=800" alt="NextGen GameSystem Project" loading="lazy">
-                    </div>
-                    <div class="project-content">
-                        <h3 data-nl="NextGen GameSystem" data-en="NextGen GameSystem">NextGen GameSystem</h3>
-                        <p data-nl="Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier." data-en="Modern webshop for gaming hardware and repairs, with registration and contact forms.">
-                            Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier.
-                        </p>
-                        <div class="project-details">
-                            <div class="tech-stack">
-                                <span>HTML/CSS</span>
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="./Sami_Portfolio/Info projects/nextgen.html" class="project-link" data-nl="Meer over dit project" data-en="more about this project">Meer over dit project</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Tech Ticker -->
+    <div class="tech-ticker">
+        <div class="ticker-wrapper">
+            <div class="ticker-track">
+                <div class="ticker-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                <div class="ticker-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                <div class="ticker-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div class="ticker-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                <div class="ticker-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                <div class="ticker-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="ticker-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                <div class="ticker-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="ticker-item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+                <div class="ticker-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                <div class="ticker-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                <div class="ticker-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                <div class="ticker-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                <div class="ticker-item"><i class="devicon-linux-plain"></i><span>Linux</span></div>
+                <div class="ticker-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
+                <!-- Duplicate voor naadloze loop -->
+                <div class="ticker-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                <div class="ticker-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+                <div class="ticker-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div class="ticker-item"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                <div class="ticker-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                <div class="ticker-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                <div class="ticker-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+                <div class="ticker-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                <div class="ticker-item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+                <div class="ticker-item"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                <div class="ticker-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></div>
+                <div class="ticker-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                <div class="ticker-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                <div class="ticker-item"><i class="devicon-linux-plain"></i><span>Linux</span></div>
+                <div class="ticker-item"><i class="devicon-figma-plain colored"></i><span>Figma</span></div>
             </div>
+        </div>
+    </div>
+
+    <!-- Projecten Slider -->
+    <section id="projecten">
+        <div class="projects-header">
+            <span data-nl="PROJECTEN" data-en="PROJECTS">PROJECTEN</span>
+        </div>
+        <div class="projects-slider-wrap">
+            <div class="projects-slider">
+
+                <!-- Project 1: Bright Smile -->
+                <article class="slide-card">
+                    <a href="./Sami_Portfolio/Info projects/brightsmile.html" class="slide-card-inner">
+                        <div class="slide-img">
+                            <img src="https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Bright Smile Project" loading="lazy">
+                        </div>
+                        <div class="slide-body">
+                            <h3 class="slide-title" data-nl="BRIGHT SMILE" data-en="BRIGHT SMILE">BRIGHT SMILE</h3>
+                            <p class="slide-desc" data-nl="PHP + MySQL website voor het beheren van tandarts­afspraken met een nette gebruikersinterface." data-en="PHP + MySQL website for managing dental appointments with a clean user interface.">
+                                PHP + MySQL website voor het beheren van tandartsafspraken met een nette gebruikersinterface.
+                            </p>
+                            <ul class="slide-tags">
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <span class="slide-cta" data-nl="Bekijk project →" data-en="View project →">Bekijk project →</span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Project 2: NextGen -->
+                <article class="slide-card">
+                    <a href="./Sami_Portfolio/Info projects/nextgen.html" class="slide-card-inner">
+                        <div class="slide-img">
+                            <img src="https://images.pexels.com/photos/2115257/pexels-photo-2115257.jpeg?auto=compress&cs=tinysrgb&w=900" alt="NextGen GameSystem Project" loading="lazy">
+                        </div>
+                        <div class="slide-body">
+                            <h3 class="slide-title" data-nl="NEXTGEN GAMESYSTEM" data-en="NEXTGEN GAMESYSTEM">NEXTGEN GAMESYSTEM</h3>
+                            <p class="slide-desc" data-nl="Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier." data-en="Modern webshop for gaming hardware and repairs, with registration and contact forms.">
+                                Moderne webshop voor gaming hardware en reparaties, met registratie- en contactformulier.
+                            </p>
+                            <ul class="slide-tags">
+                                <li>HTML/CSS</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <span class="slide-cta" data-nl="Bekijk project →" data-en="View project →">Bekijk project →</span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Project 3: Woonjong -->
+                <article class="slide-card">
+                    <a href="./Sami_Portfolio/Info projects/woonjong.html" class="slide-card-inner">
+                        <div class="slide-img">
+                            <img src="./Sami_Portfolio/foto's/woonjong/cover.png" alt="Woonjong Studentenhuisvesting" loading="lazy">
+                        </div>
+                        <div class="slide-body">
+                            <h3 class="slide-title" data-nl="WOONJONG" data-en="WOONJONG">WOONJONG</h3>
+                            <p class="slide-desc" data-nl="Studentenhuisvestingsplatform met rollen voor student, verhuurder en beheerder inclusief documentatie en sprintaanpak." data-en="Student housing platform with roles for student, landlord and admin including documentation and sprint workflow.">
+                                Studentenhuisvestingsplatform met rollen voor student, verhuurder en beheerder inclusief documentatie en sprintaanpak.
+                            </p>
+                            <ul class="slide-tags">
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                            <span class="slide-cta" data-nl="Bekijk project →" data-en="View project →">Bekijk project →</span>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Placeholder kaart -->
+                <article class="slide-card slide-card--coming">
+                    <div class="slide-card-inner">
+                        <div class="slide-coming-content">
+                            <span class="slide-coming-icon">🚀</span>
+                            <h3 data-nl="Binnenkort..." data-en="Coming soon...">Binnenkort...</h3>
+                            <p data-nl="Nieuw project in ontwikkeling" data-en="New project in development">Nieuw project in ontwikkeling</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <div class="slider-hint" data-nl="← Sleep om meer te zien →" data-en="← Drag to see more →">← Sleep om meer te zien →</div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
-            <h2 data-nl="Vaardigheden" data-en="Skills">Vaardigheden</h2>
+            <h2 data-nl="Skills Van Sami" data-en="Skills Of Sami">Skills Van Sami</h2>
+            <p class="skills-intro" data-nl="Ik hou ervan om websites vanaf nul op te bouwen en te verfijnen. Elke project is een kans om te experimenteren en mijn grenzen te verleggen." data-en="I love building websites from scratch and refining every detail. Every project is a chance to experiment and push my limits.">
+                Ik hou ervan om websites vanaf nul op te bouwen en te verfijnen. Elke project is een kans om te experimenteren en mijn grenzen te verleggen.
+            </p>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3 data-nl="Frontend" data-en="Frontend">Frontend</h3>
@@ -209,6 +291,20 @@
                            data-en="Currently pursuing a level 4 MBO education in Software Development, learning about web development, databases, programming languages, and software projects.">
                             Bezig met een MBO niveau 4 opleiding Software Development, waarbij ik leer over webontwikkeling, databases, programmeertalen en softwareprojecten.
                         </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h3 data-nl="Woonjong Studentenhuisvesting" data-en="Woonjong Student Housing">Woonjong Studentenhuisvesting</h3>
+                        <h4 data-nl="Teamproject" data-en="Team Project">Teamproject</h4>
+                        <p data-nl="Ontwikkeld een platform voor studentenhuisvesting met rollen voor student, verhuurder en beheerder, inclusief database- en dashboardfunctionaliteit." 
+                           data-en="Developed a student housing platform with roles for student, landlord, and admin, including database and dashboard functionality.">
+                            Ontwikkeld een platform voor studentenhuisvesting met rollen voor student, verhuurder en beheerder, inclusief database- en dashboardfunctionaliteit.
+                        </p>
+                        <a href="./Sami_Portfolio/Info projects/woonjong.html" class="timeline-link" data-nl="Bekijk Project" data-en="View Project">Bekijk Project →</a>
                     </div>
                 </div>
                 
