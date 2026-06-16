@@ -30,6 +30,7 @@ langSwitch.addEventListener('click', () => {
 
     // Sluit het menu als het open is
     document.querySelector('nav ul').classList.remove('show');
+    document.querySelector('.hamburger').classList.remove('show');
 });
 
 // Smooth scrolling
@@ -220,6 +221,8 @@ if (slider) {
 
 function closeLightbox() {
     const lightbox = document.getElementById('lightbox');
+    if (!lightbox) return;
+
     lightbox.style.display = 'none';
     
     // Re-enable body scroll
@@ -227,14 +230,20 @@ function closeLightbox() {
 }
 
 // Close lightbox when clicking on close button
-document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+const lightboxCloseBtn = document.querySelector('.lightbox-close');
+if (lightboxCloseBtn) {
+    lightboxCloseBtn.addEventListener('click', closeLightbox);
+}
 
 // Close lightbox when clicking outside the image
-document.getElementById('lightbox').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeLightbox();
-    }
-});
+const lightboxOverlay = document.getElementById('lightbox');
+if (lightboxOverlay) {
+    lightboxOverlay.addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeLightbox();
+        }
+    });
+}
 
 // Close lightbox with Escape key
 document.addEventListener('keydown', function(e) {
