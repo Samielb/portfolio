@@ -14,6 +14,11 @@ function updateLanguage() {
         }
     });
 
+    document.querySelectorAll('[data-nl-aria][data-en-aria]').forEach(element => {
+        const newAria = element.getAttribute(`data-${currentLang}-aria`);
+        element.setAttribute('aria-label', newAria);
+    });
+
     // Update button text
     langSwitch.textContent = currentLang === 'nl' ? 'EN' : 'NL';
     langSwitch.setAttribute('data-lang', currentLang === 'nl' ? 'en' : 'nl');
@@ -154,10 +159,36 @@ function openLightbox(imageContainer) {
 
 // ── Projects Slider: drag to scroll ──────────────────────────
 const slider = document.querySelector('.projects-slider');
+const prevArrow = document.querySelector('.slider-arrow--prev');
+const nextArrow = document.querySelector('.slider-arrow--next');
 if (slider) {
     let isDown = false;
     let startX;
     let scrollLeft;
+
+    const updateArrows = () => {
+        if (!prevArrow || !nextArrow) return;
+
+        const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+        prevArrow.disabled = slider.scrollLeft <= 4;
+        nextArrow.disabled = slider.scrollLeft >= maxScrollLeft - 4;
+    };
+
+    if (prevArrow && nextArrow) {
+        const scrollStep = () => Math.max(slider.clientWidth * 0.78, 280);
+
+        prevArrow.addEventListener('click', () => {
+            slider.scrollBy({ left: -scrollStep(), behavior: 'smooth' });
+        });
+
+        nextArrow.addEventListener('click', () => {
+            slider.scrollBy({ left: scrollStep(), behavior: 'smooth' });
+        });
+
+        slider.addEventListener('scroll', updateArrows);
+        window.addEventListener('resize', updateArrows);
+        updateArrows();
+    }
 
     slider.addEventListener('mousedown', (e) => {
         isDown = true;
@@ -169,11 +200,13 @@ if (slider) {
     slider.addEventListener('mouseleave', () => {
         isDown = false;
         slider.classList.remove('grabbing');
+        updateArrows();
     });
 
     slider.addEventListener('mouseup', () => {
         isDown = false;
         slider.classList.remove('grabbing');
+        updateArrows();
     });
 
     slider.addEventListener('mousemove', (e) => {

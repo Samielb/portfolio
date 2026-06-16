@@ -405,6 +405,46 @@ nav a:hover {
     padding-bottom: 1rem;
 }
 
+.slider-arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border: 1px solid #cbd5e1;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #0f172a;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.14);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.slider-arrow:hover {
+    transform: translateY(-50%) scale(1.06);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.2);
+}
+
+.slider-arrow:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    transform: translateY(-50%);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.slider-arrow--prev {
+    left: 0.8rem;
+}
+
+.slider-arrow--next {
+    right: 0.8rem;
+}
+
 .projects-slider {
     display: flex;
     gap: 0;
@@ -1110,6 +1150,22 @@ footer p {
 
     .project-image {
         height: 180px;
+    }
+}
+
+@media (min-width: 769px) {
+    .slider-arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .projects-slider {
+        padding: 0 3.8rem;
+    }
+
+    .slider-hint {
+        display: none;
     }
 }
 
